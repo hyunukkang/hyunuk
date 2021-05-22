@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.main-inner {
+    max-width: 1680px;
+    margin: 0 auto;
+}
+.inner {
+    max-width: 1220px;
+    margin: 0 auto;
+}
