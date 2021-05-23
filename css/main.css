@@ -2,4 +2,111 @@
 @import "reset.css";
 @import "common.css";
 @import "layout.css";
-/* reset layout common */
+/* reset common layout */
+
+/* header */
+header .gnb-top {
+    position: relative;
+    font-size: var(--small-font);
+}
+header .gnb-top:before {
+    content: '';
+    width: 1000%;
+    height: 1px;
+    background: var(--border-color);
+    position: absolute;
+    left: -120px;
+    bottom: -2px;
+}
+header .gnb-top-search {
+    display: inline-block;
+    line-height: 40px;
+    text-transform: uppercase;
+    float: right;
+    width: 20%;
+    text-align: right;
+    padding-bottom: 2px;
+    border-left: 1px solid var(--border-color);
+}
+header .gnb-top-search input {
+    width: 65%;
+}
+header .gnb-top-search a {
+    margin-left: 20px;
+    margin-right: 10px;
+}
+/* header top */
+.gnb-top-menu {
+    width: 30%;
+    float: right;
+    text-align: right;
+    border-left: 1px solid var(--border-color);
+}
+.gnb-top-menu-item {
+    display: inline-block;
+    line-height: 40px;
+    margin-left: 20px;
+}
+.gnb-top-menu-item img {
+    width: 18px;
+    vertical-align: middle;
+}
+/* header bottom */
+.gnb-bottom {
+    height: 60px;
+    position: relative;
+    font-size: var(--regular-font);
+}
+.gnb-bottom:before {
+    content: '';
+    width: 1000%;
+    height: 60px;
+    position: absolute;
+    top: 0;
+    left: -120px;
+    border-bottom: 1px solid var(--border-color);
+}
+.gnb-bottom .gnb-logo {
+    float: left;
+    width: 95px;
+    margin-top: 15px;
+}
+.gnb-bottom-menu {
+    float: right;
+    line-height: 60px;
+}
+.gnb-bottom-menu-item {
+    display: inline-block;
+    margin-left: 60px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+/* header end */
+
+/* fixbtn */
+.fix-btn {
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+}
+.fix-btn a {
+    display: block;
+    /* border: 1px solid #000; */
+    border-radius: 25px;
+    padding: 12px 18px;
+    box-shadow: 3px 3px 5px #00000022;
+    font-size: var(--small-font);
+    font-weight: 600;
+}
+.fix-btn img {
+    margin-top: 3px;
+
+}
+.fix-btn .find-store {
+    margin-bottom: 10px;
+}
+.fix-btn .find-store,
+.fix-btn .kakao-chat {
+}
+.fix-btn .kakao-chat img {
+}
