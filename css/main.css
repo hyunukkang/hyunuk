@@ -5,9 +5,11 @@
 /* reset common layout */
 
 /* header */
+/* gnb top */
 header .gnb-top {
     position: relative;
     font-size: var(--small-font);
+    /* height: 40px; */
 }
 header .gnb-top:before {
     content: '';
@@ -16,7 +18,7 @@ header .gnb-top:before {
     background: var(--border-color);
     position: absolute;
     left: -120px;
-    bottom: -2px;
+    bottom: 0;
 }
 header .gnb-top-search {
     display: inline-block;
@@ -25,7 +27,7 @@ header .gnb-top-search {
     float: right;
     width: 20%;
     text-align: right;
-    padding-bottom: 2px;
+    margin-top: -1px;
     border-left: 1px solid var(--border-color);
 }
 header .gnb-top-search input {
@@ -35,12 +37,12 @@ header .gnb-top-search a {
     margin-left: 20px;
     margin-right: 10px;
 }
-/* header top */
 .gnb-top-menu {
     width: 30%;
     float: right;
     text-align: right;
     border-left: 1px solid var(--border-color);
+    height: 40px;
 }
 .gnb-top-menu-item {
     display: inline-block;
@@ -51,7 +53,7 @@ header .gnb-top-search a {
     width: 18px;
     vertical-align: middle;
 }
-/* header bottom */
+/* gnb bottom */
 .gnb-bottom {
     height: 60px;
     position: relative;
@@ -60,9 +62,8 @@ header .gnb-top-search a {
 .gnb-bottom:before {
     content: '';
     width: 1000%;
-    height: 60px;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: -120px;
     border-bottom: 1px solid var(--border-color);
 }
@@ -81,6 +82,9 @@ header .gnb-top-search a {
     text-transform: uppercase;
     font-weight: bold;
 }
+.gnb-bottom-menu-item a {
+    display: block;
+}
 /* header end */
 
 /* fixbtn */
@@ -93,10 +97,11 @@ header .gnb-top-search a {
     display: block;
     /* border: 1px solid #000; */
     border-radius: 25px;
-    padding: 12px 18px;
-    box-shadow: 3px 3px 5px #00000022;
+    padding: 10px 14px;
+    box-shadow: 0px 4px 5px #00000022;
     font-size: var(--small-font);
     font-weight: 600;
+    background: var(--white-color);
 }
 .fix-btn img {
     margin-top: 3px;
