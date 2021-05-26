@@ -5,6 +5,7 @@
 /* reset common layout */
 
 /* header */
+/* gnb top */
 header .gnb-top {
     position: relative;
     font-size: var(--small-font);
@@ -16,7 +17,7 @@ header .gnb-top:before {
     background: var(--border-color);
     position: absolute;
     left: -120px;
-    bottom: 0px;
+    bottom: 0;
 }
 header .gnb-top-search {
     display: inline-block;
@@ -41,6 +42,7 @@ header .gnb-top-search a {
     float: right;
     text-align: right;
     border-left: 1px solid var(--border-color);
+    height: 40px;
 }
 .gnb-top-menu-item {
     display: inline-block;
@@ -52,6 +54,7 @@ header .gnb-top-search a {
     vertical-align: middle;
 }
 /* header bottom-menu */
+/* gnb bottom */
 .gnb-bottom {
     height: 60px;
     position: relative;
@@ -60,9 +63,8 @@ header .gnb-top-search a {
 .gnb-bottom:before {
     content: '';
     width: 1000%;
-    height: 60px;
     position: absolute;
-    top: 0;
+    bottom: 0;
     left: -120px;
     border-bottom: 1px solid var(--border-color);
 }
@@ -81,6 +83,9 @@ header .gnb-top-search a {
     text-transform: uppercase;
     font-weight: bold;
 }
+.gnb-bottom-menu-item a {
+    display: block;
+}
 /* header end */
 
 /* fixbtn */
@@ -91,12 +96,12 @@ header .gnb-top-search a {
 }
 .fix-btn a {
     display: block;
-    /* border: 1px solid #000; */
     border-radius: 25px;
-    padding: 12px 18px;
-    box-shadow: 3px 3px 5px #00000022;
+    padding: 10px 14px;
+    box-shadow: 0px 4px 5px #00000022;
     font-size: var(--small-font);
     font-weight: 600;
+    background: var(--white-color);
 }
 .fix-btn img {
     margin-top: 3px;
@@ -105,6 +110,7 @@ header .gnb-top-search a {
 .fix-btn .find-store {
     margin-bottom: 10px;
 }
+
 /* section.timeline */
 .timeline {
     padding: 50px 0 150px;
@@ -185,6 +191,7 @@ header .gnb-top-search a {
 .title span a:hover {
     text-decoration: underline;
 }
+
 /* section.task-chair */
 .task-chair {
     padding: 80px 0 40px;
@@ -212,6 +219,7 @@ header .gnb-top-search a {
     font-size: var(--large-font);
     margin-bottom: 80px;
 }
+
 /* section.kids-chair */
 .kids-chair {
     padding: 80px 0 120px;
@@ -238,6 +246,7 @@ header .gnb-top-search a {
     font-size: var(--medium-font);
     font-weight: 600;
 }
+
 /* section.notice */
 .notice {
     background: #f5f5f5;
