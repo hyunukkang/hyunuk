@@ -311,3 +311,34 @@ header .gnb-top-search a {
     width: 228px;
     height: 228px;
 }
+.notice-choice-tip-title {
+    display: inline-block;
+    width: 50%;
+    vertical-align: top;
+    margin-right: -6px;
+}
+.notice-choice-tip-title span {
+    font-size: 18px;
+    margin-left: 10px;
+    text-transform: uppercase;
+}
+.notice-choice-tip-desc {
+    margin: 30px 0 30px 0;
+}
+.notice-choice-tip-desc h3 {
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+.notice-choice-tip-desc p {
+    font-size: 15px;
+}
+.notice-choice-tip-more {
+    text-transform: uppercase;
+    font-size: var(--small-font);
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+.notice-choice-tip-photo {
+    display: inline-block;
+    width: 50%;
+}
